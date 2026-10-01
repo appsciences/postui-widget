@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark, so the widget is never a blank white rectangle (R5.3). -->
+    <color name="widget_background">#FF202124</color>
+    <color name="widget_text">#FFE8EAED</color>
+</resources>

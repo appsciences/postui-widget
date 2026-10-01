@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">postui</string>
+    <string name="widget_description">Shows a web page on your home screen</string>
+    <string name="widget_placeholder">Tap to load</string>
+    <string name="widget_image_description">Rendered web page</string>
+</resources>
