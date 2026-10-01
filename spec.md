@@ -302,10 +302,15 @@ fixed height, no scroll, large type. Satisfies A9.
   WebView, or only trigger a refresh? *(Phase 1: refresh only.)*
 - Q2. Is a settle delay sufficient for artifact render timing, or is a JS
   readiness probe needed (e.g. poll for a sentinel element)?
+  *(Phase 1: the default 750 ms settle captured the fully rendered Note Dude
+  NA task list on the first render. No probe needed yet.)*
 - Q3. Render both orientations and supply `RemoteViews(landscape, portrait)`,
   or portrait only?
 - Q4. Does the Note Dude NA artifact need a dedicated widget layout mode, or
   does its existing layout fit a 4×5 widget as-is?
+  *(Phase 1: it renders correctly but only ~2.5 tasks fit in 4×5. The search
+  box, add-task row and per-task "Today" dropdowns take most of the space and
+  do nothing in a picture. A widget mode that hides them is needed — Phase 5.)*
 - Q5. Minimum supported API level? API 31 unlocks `targetCellWidth` /
   `maxResizeWidth`, which materially improve large-size behaviour.
   *(Tentative: `minSdk 31`. Cheap to lower later.)*
